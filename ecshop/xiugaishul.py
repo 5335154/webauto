@@ -1,5 +1,5 @@
 '''
-case:未登录状态，首页商品搜索,购买
+case:未登录状态，首页商品搜索,购买。
 '''
 
 from selenium import webdriver
