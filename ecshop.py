@@ -16,14 +16,14 @@ time.sleep(2)
 #1 跳转注册页面
 driver.find_element(By.LINK_TEXT,'注册').click()
 #2 输入注册信息，完成注册
-driver.find_element(By.ID,"username").send_keys('wanghui')             #用户名
-driver.find_element(By.ID,"email").send_keys('123@123.com')            #email
+driver.find_element(By.ID,"username").send_keys('wanghui1')             #用户名
+driver.find_element(By.ID,"email").send_keys('12311@1231.com')            #email
 driver.find_element(By.ID,"password1").send_keys('banxian123')         #密码
 driver.find_element(By.ID,"conform_password").send_keys('banxian123')  #确认密码
-driver.find_element(By.NAME,"extend_field1").send_keys('123@123.com')  #MSN
-driver.find_element(By.NAME,"extend_field2").send_keys('283166183')    #QQ
-driver.find_element(By.NAME,"extend_field3").send_keys('5335154')      #办公电话
-driver.find_element(By.NAME,"extend_field4").send_keys('5335154')      #家庭电话
+#driver.find_element(By.NAME,"extend_field1").send_keys('1231@1231.com')  #MSN
+#driver.find_element(By.NAME,"extend_field2").send_keys('283166183')    #QQ
+#driver.find_element(By.NAME,"extend_field3").send_keys('5335154')      #办公电话
+#driver.find_element(By.NAME,"extend_field4").send_keys('5335154')      #家庭电话
 driver.find_element(By.NAME,"extend_field5").send_keys('19150855945')  #手机
 # 1) 找到下拉框
 element = driver.find_element(By.TAG_NAME,"select")                    #找到下拉框并实例化

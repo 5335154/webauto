@@ -76,8 +76,8 @@ driver.switch_to.default_content()   #跳出所有frame
 driver.switch_to.frame('main-frame')  #进入main-frame这一层
 
 driver.find_element(By.NAME,'username').clear()
-driver.find_element(By.NAME,'username').send_keys('banxian2')
-driver.find_element(By.XPATH,'/html/body/div[1]/form/table/tbody/tr[2]/td[2]/input').send_keys('111@111.com')
+driver.find_element(By.NAME,'username').send_keys('我是王辉1')
+driver.find_element(By.XPATH,'/html/body/div[1]/form/table/tbody/tr[2]/td[2]/input').send_keys('11121@21.com')
 driver.find_element(By.NAME,'password').clear()
 driver.find_element(By.NAME,'password').send_keys('5335154')
 driver.find_element(By.NAME,'confirm_password').send_keys('5335154')
@@ -115,6 +115,12 @@ driver.find_element(By.XPATH,'//div[@id="listDiv"]/table/tbody/tr[1]/th[1]/input
 time.sleep(3)
 
 driver.find_element(By.ID,'btnSubmit').click()
+time.sleep(1)
+print(driver.switch_to.alert.text)
+time.sleep(1)
+driver.switch_to.alert.accept()
+time.sleep(1)
+print(driver.current_url)
 time.sleep(3)
 
 driver.quit()
